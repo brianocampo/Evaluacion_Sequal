@@ -18,16 +18,11 @@ public class calculadora {
         String resultado2 = null;
         Integer resultado = 0;
 
-        try {
+        resultado = Integer.parseInt(valor1) + Integer.parseInt(valor2);
 
-            resultado = Integer.parseInt(valor1) + Integer.parseInt(valor2);
-
-            if (Integer.parseInt(valor1) > 70) {
-                resultado = Integer.parseInt(valor1) + Integer.parseInt(valor2) + 1;
-                System.out.println(" resultado con el IF" + resultado);
-            }
-
-        } catch (Exception e) {
+        if (Integer.parseInt(valor1) > 70) {
+            resultado = Integer.parseInt(valor1) + Integer.parseInt(valor2) + 1;
+            System.out.println(" resultado con el IF" + resultado);
         }
 
         return resultado;
