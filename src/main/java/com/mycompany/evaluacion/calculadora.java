@@ -16,16 +16,22 @@ public class calculadora {
     public static Integer realizarSuma(String valor1, String valor2) {
 
         String resultado2 = null;
-        Integer resultado;
+        Integer resultado = 0;
 
-        resultado = Integer.parseInt(valor1) + Integer.parseInt(valor2);
+        try {
 
-        if (Integer.parseInt(valor1) > 70) {
-            resultado = Integer.parseInt(valor1) + Integer.parseInt(valor2) + 1;
-            System.out.println(" resultado con el IF" + resultado);
+            resultado = Integer.parseInt(valor1) + Integer.parseInt(valor2);
+
+            if (Integer.parseInt(valor1) > 70) {
+                resultado = Integer.parseInt(valor1) + Integer.parseInt(valor2) + 1;
+                System.out.println(" resultado con el IF" + resultado);
+            }
+
+        } catch (Exception e) {
         }
 
         return resultado;
+
     }
     
 }
